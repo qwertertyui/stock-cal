@@ -71,4 +71,21 @@ if st.sidebar.button("計算する"):
             "FCF予測 (億円)": future_cash_flows
         })
         st.bar_chart(chart_data, x="年数", y="FCF予測 (億円)")
+
+# --- 広告エリア (常に画面下部に表示) ---
+st.markdown("---") # 区切り線
+st.caption("スポンサーリンク")
+
+# A8.netの広告コード
+# divタグで囲んで中央寄せにしています（スマホで見やすくするため）
+a8_code = '''
+<div style="text-align: center;">
+    <a href="https://px.a8.net/svt/ejp?a8mat=4AV8S7+B2WG36+ONS+TV3PD" rel="nofollow">
+    <img border="0" width="728" height="90" alt="" src="https://www26.a8.net/svt/bgt?aid=260118583670&wid=001&eno=01&mid=s00000003196005016000&mc=1"></a>
+    <img border="0" width="1" height="1" src="https://www13.a8.net/0.gif?a8mat=4AV8S7+B2WG36+ONS+TV3PD" alt="">
+</div>
+'''
+
+# 広告を表示
+st.markdown(a8_code, unsafe_allow_html=True)
  
